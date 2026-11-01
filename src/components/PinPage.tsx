@@ -2,6 +2,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import confetti from 'canvas-confetti';
 import { Heart, Lock, KeyRound, Sparkles } from 'lucide-react';
 import { romanticAudio } from '../utils/sound';
+import girlfriendPhoto from '../assets/IMG_20261101_194333_7b17bc63.jpg';
 
 interface PinPageProps {
   onUnlock: () => void;
@@ -13,7 +14,7 @@ export const PinPage: React.FC<PinPageProps> = ({ onUnlock }) => {
   const [errorMessage, setErrorMessage] = useState('');
   const [isShaking, setIsShaking] = useState(false);
   const [isUnlocking, setIsUnlocking] = useState(false);
-  const [imgSrc, setImgSrc] = useState('/assets/aistudio/IMG_20261101_194333_7b17bc63.jpg');
+  const [imgSrc, setImgSrc] = useState<string>(girlfriendPhoto);
 
   const input1Ref = useRef<HTMLInputElement>(null);
   const input2Ref = useRef<HTMLInputElement>(null);

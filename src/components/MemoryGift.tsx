@@ -2,13 +2,14 @@ import React, { useState } from 'react';
 import { ArrowLeft, Sparkles, Heart, Calendar } from 'lucide-react';
 import confetti from 'canvas-confetti';
 import { romanticAudio } from '../utils/sound';
+import memoryPhoto from '../assets/IMG20230217124557_bf217a32.jpg';
 
 interface MemoryGiftProps {
   onBack: () => void;
 }
 
 export const MemoryGift: React.FC<MemoryGiftProps> = ({ onBack }) => {
-  const [imgSrc, setImgSrc] = useState('/assets/aistudio/IMG20230217124557_bf217a32.jpg');
+  const [imgSrc, setImgSrc] = useState<string>(memoryPhoto);
   const [isLoved, setIsLoved] = useState(false);
 
   const handlePhotoHeart = () => {
