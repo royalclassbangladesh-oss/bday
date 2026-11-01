@@ -1,0 +1,6 @@
+{
+  "name": "A Little World Made Just for You 💗",
+  "description": "A romantic birthday surprise website filled with love, letters, an animated blooming rose, and cherished memories.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
